@@ -4,7 +4,7 @@
     <title>COLLEEG REGISTRATION FORM</title>
 </head>
 <body>
-    <form>
+    <form autocomplete="off">
         <fieldset>
             <legend>COLLEEG STUDENT FORM</legend>
 
@@ -13,10 +13,6 @@
             placeholder="ENTER YOUR NAME"><br>
              
 
-            <label for="name" >Name:</label>
-            <input type="name" id="name" name="name" 
-            placeholder="ENTER YOUR NAME"><br>
-            
             <label for="age" >Age:</label>
             <input type="number" id="age" name="age" 
             placeholder="ENTER YOUR AGE"><br>
@@ -25,13 +21,16 @@
             <input type="radio" id="gender" name="gender" value="male" />Male 
             <input type="radio" name="gender" value="female" /> Female   
             <input type="radio" name="gender" value="other" /> Other   <br>
-
+             
+            
             <label for="language">Language:</label>
-            <input type="checkbox" name="language" value="C" />C
-            <input type="checkbox" name="language" value="C++" />C++
-            <input type="checkbox" name="language" value="java" />java
-            <input type="checkbox" name="language" value="python" />python
-            <input type="checkbox" name="language" value="ruby" />ruby   <br>
+            <select required>
+                <option name="C">C</option>
+                <option name="C++">C++</option>
+                <option name="java">java</option>
+                <option name="python" selected>python</option>
+            </select>
+            <br>
             
             <label for="password" >Password:</label>
             <input type="password" id="password" name="password" 
@@ -52,6 +51,8 @@
             <label for="time" >Time:</label>
             <input type="time" id="time" name="time" 
             placeholder="ENTER THE TIME"><br>
+
+            <button>DOWNLOAD</button>
 
         </fieldset>
     </form>
